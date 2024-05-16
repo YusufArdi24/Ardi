@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(th.jpg) url(th.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, rgb(188, 202, 246), rgb(49, 118, 220));
+}
+
+fieldset{
+    border: 0;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    background-color: rgb(252 252 252);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    transition: 1s all cubic-bezier(0.04, 0.75, 0.58, 1);
+}
+.container h1{
+    text-align: left;
+    color: #000;
+    margin-bottom: 10px;
+}
+.container h1 center{
+    font-family: 'Nunito', sans-serif;
+}
+.container label{
+    text-align: left;
+    color: #202020;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px !important;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #b6b6b8;
+    color: #000000;
+    font-size: 20px;
+    transition: .2s all;
+}
+
+.container form input:last-child{
+    margin-bottom: 30px !important;
+}
+
+.container form input:focus{
+    border-bottom: 2px solid #3667bd;
+}
+
+.container form button{
+    border-radius: 7px;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #4578d1;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s all;
+}
+.container form button:focus, .container form button:hover{
+    background-color: #305ca9;
+}
